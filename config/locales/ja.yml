@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Atsushi0915 
-tigrish
-/
-devise-i18n
-Public
-Code
-Issues
-3
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-devise-i18n/rails/locales/ja.yml
-@JasonBarnabe
-JasonBarnabe Update locales
-Latest commit 02666ae on 10 Apr 2021
- History
- 6 contributors
-@JasonBarnabe@johnnyshields@yambe2002@milk1000cc@ryosuke-endo@deivid-rodriguez
-143 lines (143 sloc)  9.02 KB
-   
 ja:
   activerecord:
     attributes:
@@ -55,8 +25,15 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
+      task:
+        id: ID
+        name: 名称
+        description: 詳しい説明
+        created_at: 登録日
+        updated_at: 更新日
     models:
       user: ユーザー
+      task: タスク
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。
@@ -171,15 +148,3 @@ ja:
       not_saved:
         one: エラーが発生したため %{resource} は保存されませんでした。
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
