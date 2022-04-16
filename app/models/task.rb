@@ -7,7 +7,7 @@ class Task < ApplicationRecord
 
   belongs_to :user
 
-  scope :recent, -> { order(created_at: :desc) }
+  # scope :recent, -> { order(created_at: :desc) }
 
   def self.ransackable_attributes(auth_object = nill)   #検索条件に含めるカラムを指定
     %w[name created_at]
