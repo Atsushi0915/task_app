@@ -6,6 +6,7 @@ class Task < ApplicationRecord
   validate :validate_name_not_including_comma
 
   belongs_to :user
+  has_one_attached :image
 
   # scope :recent, -> { order(created_at: :desc) }
 
