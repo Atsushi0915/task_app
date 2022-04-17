@@ -55,6 +55,11 @@ class TasksController < ApplicationController
     render :new unless @task.valid?  #unless: 条件がfalseの時処理   valid？：エラーがある場合は false
   end
 
+  def import
+    current_user.tasks.import(params[:file])
+    redirect_to tasks_url, notice: "タスクを追加しました"
+  end
+
   private
     def task_params
       params.require(:task).permit(:name, :description, :image)
